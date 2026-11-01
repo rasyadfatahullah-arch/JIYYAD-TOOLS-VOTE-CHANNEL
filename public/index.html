@@ -1,1 +1,36 @@
-.
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>JIYYAD TOOLS — WhatsApp Channel Vote</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+<main class="shell">
+<header class="hero">
+<div class="badge">JIYYAD TOOLS</div>
+<h1>WhatsApp Channel <span>Vote</span></h1>
+<p>Kirim vote polling ke channel WhatsApp secara cepat, aman, dan dengan terminal output yang smooth.</p>
+</header>
+<section class="card">
+<form id="voteForm" autocomplete="off">
+<label for="url">URL Channel / Postingan WhatsApp</label>
+<input id="url" type="url" required placeholder="https://whatsapp.com/channel/xxxxxxxx/post"/>
+<label for="pesan">Isi Pesan Vote</label>
+<textarea id="pesan" rows="3" required placeholder="Contoh: upp"></textarea>
+<button id="submitBtn" type="submit"><span class="btn-text">Kirim Vote</span><span class="btn-loader" hidden></span></button>
+</form>
+<div class="terminal">
+<div class="terminal-head"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="terminal-title">terminal — jiyyad-tools</span></div>
+<pre id="terminal" class="terminal-body"></pre>
+</div>
+</section>
+<footer><p>© <span id="year"></span> JIYYAD TOOLS • API owner disembunyikan</p></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
